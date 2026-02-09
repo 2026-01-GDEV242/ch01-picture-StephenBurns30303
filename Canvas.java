@@ -8,10 +8,8 @@ import java.util.*;
  * This is a modification of the general purpose Canvas, specially made for
  * the BlueJ "shapes" example. 
  *
- * @author: Bruce Quig
- * @author: Michael Kšlling (mik)
- *
- * @version 2016.02.29
+ * @author: Stephen M. Burns
+ * @version 2026.02.09
  */
 public class Canvas
 {
@@ -24,6 +22,7 @@ public class Canvas
 
     /**
      * Factory method to get the canvas singleton object.
+     * Small change, the background is now set to black instead of white.
      */
     public static Canvas getCanvas()
     {
@@ -118,6 +117,7 @@ public class Canvas
 
     /**
      * Set the foreground color of the Canvas.
+     * Four new colors have been added ("pink", "sky", "gold", and "purple")
      * @param  newColor   the new color for the foreground of the Canvas 
      */
     public void setForegroundColor(String colorString)
