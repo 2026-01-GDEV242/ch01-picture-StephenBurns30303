@@ -27,9 +27,9 @@ public class Picture
     private Triangle door2;
     private Triangle door3;
     
-    private Person priest1;
-    private Person priest2;
-    private Person priest3;
+    private Person guy1;
+    private Person guy2;
+    private Person guy3;
     
     private boolean drawn;
 
@@ -50,9 +50,9 @@ public class Picture
         door2= new Triangle();
         door3= new Triangle();
         
-        priest1= new Person();
-        priest2= new Person();
-        priest3= new Person();
+        guy1= new Person();
+        guy2= new Person();
+        guy3= new Person();
 
         drawn = false;
     }
@@ -83,7 +83,7 @@ public class Picture
             background2.makeVisible();
             background2.moveVertical(20);
             background2.moveHorizontal(-100);
-            background2.slowMoveHorizontal(-60);            
+            background2.slowMoveHorizontal(-60);
 
             sun2.changeSize(100);
             sun2.changeColor("pink");
@@ -107,6 +107,50 @@ public class Picture
             sun3.slowMoveHorizontal(50);
             sun3.changeColor("purple");
             sun3.slowMoveVertical(-150);
+
+            door1.changeSize(100,200);
+            door1.changeColor("gold");
+            door1.makeVisible();
+            door1.moveHorizontal(-60);
+            door1.moveVertical(100);
+            door1.slowMoveVertical(-80);
+            door1.slowMoveHorizontal(200);
+            
+            door2.changeSize(100,200);
+            door2.changeColor("magenta");
+            door2.makeVisible();
+            door2.moveHorizontal(-60);
+            door2.moveVertical(100);
+            door2.slowMoveVertical(-100);
+            door2.slowMoveHorizontal(180);
+            
+            door3.changeSize(100,200);
+            door3.changeColor("purple");
+            door3.makeVisible();
+            door3.moveHorizontal(-60);
+            door3.moveVertical(100);
+            door3.slowMoveVertical(-120);
+            door3.slowMoveHorizontal(160);
+            
+            guy1.changeSize(10,10);
+            guy1.changeColor("gold");
+            guy1.makeVisible();
+            guy1.moveVertical(30);
+            
+            guy2.changeSize(10,10);
+            guy2.changeColor("black");
+            guy2.makeVisible();
+            guy2.moveHorizontal(20);
+            guy2.moveVertical(30);
+
+            guy3.changeSize(10,10);
+            guy3.changeColor("green");
+            guy3.makeVisible();
+            guy3.moveHorizontal(40);
+            guy3.moveVertical(30);
+            
+            
+            
             
             drawn = true;
         }
