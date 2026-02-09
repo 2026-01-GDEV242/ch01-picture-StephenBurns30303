@@ -29,7 +29,7 @@ public class Canvas
     {
         if(canvasSingleton == null) {
             canvasSingleton = new Canvas("BlueJ Picture Demo", 500, 300, 
-                                         Color.white);
+                                         Color.black);
         }
         canvasSingleton.setVisible(true);
         return canvasSingleton;
@@ -140,7 +140,7 @@ public class Canvas
             graphic.setColor(new Color(43, 209, 252));
         }
         
-        else if(colorString.equals("yellow")) {
+        else if(colorString.equals("gold")) {
             graphic.setColor(new Color(243, 234, 95));
         }
         
