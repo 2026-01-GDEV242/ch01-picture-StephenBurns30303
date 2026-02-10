@@ -162,6 +162,23 @@ public class Picture
     public void setBlackAndWhite()
     {
         
+        background1.changeColor("black");
+        background2.changeColor("black");
+        background3.changeColor("black");
+        
+        guy1.changeColor("black");
+        guy2.changeColor("black");
+        guy3.changeColor("black");
+        
+        door1.changeColor("black");
+        door2.changeColor("black");
+        door3.changeColor("black");
+        
+        sun1.changeColor("black");
+        sun2.changeColor("black");
+        sun3.changeColor("black");
+        
+        
     }
 
     /**
@@ -169,6 +186,22 @@ public class Picture
      */
     public void setColor()
     {
+        
+        background1.changeColor("black");
+        background2.changeColor("black");
+        background3.changeColor("black");
+        
+        guy1.changeColor("black");
+        guy2.changeColor("black");
+        guy3.changeColor("black");
+        
+        door1.changeColor("black");
+        door2.changeColor("black");
+        door3.changeColor("black");
+        
+        sun1.changeColor("black");
+        sun2.changeColor("black");
+        sun3.changeColor("black");
         
     }
 }
