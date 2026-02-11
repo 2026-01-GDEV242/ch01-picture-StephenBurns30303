@@ -4,7 +4,7 @@
  * can be changed. You can set it to black-and-white display and back to
  * colors (only after it's been drawn, of course).
  *
- * This class was written as an early example for teaching Java with BlueJ.
+ * This class is ment to draw an abstract picture using a fun color scheme.
  * 
  * @author  Stephen M. Burns
  * @version 2026.02.02
@@ -19,6 +19,7 @@ public class Picture
     private Square plane2;
     private Square plane3;
     
+    private Square fakeBackground;
     private Square background1;
     private Square background2;
     private Square background3;
@@ -42,6 +43,7 @@ public class Picture
         sun2= new Circle();
         sun3= new Circle();
         
+        fakeBackground=new Square();
         background1= new Square();
         background2= new Square();
         background3= new Square();
@@ -63,6 +65,12 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            
+            fakeBackground.changeColor("white");
+            fakeBackground.changeSize(2000);
+            fakeBackground.moveHorizontal(-350);
+            fakeBackground.moveVertical(-200);
+            fakeBackground.makeVisible();
             
             background1.changeSize(500);
             background1.changeColor("gold");
@@ -135,19 +143,19 @@ public class Picture
             guy1.changeSize(10,10);
             guy1.changeColor("gold");
             guy1.makeVisible();
-            guy1.moveVertical(30);
+            guy1.moveVertical(35);
             
             guy2.changeSize(10,10);
-            guy2.changeColor("black");
+            guy2.changeColor("magenta");
             guy2.makeVisible();
             guy2.moveHorizontal(20);
-            guy2.moveVertical(30);
+            guy2.moveVertical(35);
 
             guy3.changeSize(10,10);
-            guy3.changeColor("green");
+            guy3.changeColor("purple");
             guy3.makeVisible();
             guy3.moveHorizontal(40);
-            guy3.moveVertical(30);
+            guy3.moveVertical(35);
             
             
             
@@ -162,21 +170,22 @@ public class Picture
     public void setBlackAndWhite()
     {
         
-        background1.changeColor("black");
+        fakeBackground.changeColor("black");
+        background1.changeColor("white");
+        sun1.changeColor("white");
         background2.changeColor("black");
-        background3.changeColor("black");
-        
-        guy1.changeColor("black");
-        guy2.changeColor("black");
-        guy3.changeColor("black");
+        sun2.changeColor("black");
+        background3.changeColor("white");
+        sun3.changeColor("white");
         
         door1.changeColor("black");
         door2.changeColor("black");
-        door3.changeColor("black");
+        door3.changeColor("white");        
         
-        sun1.changeColor("black");
-        sun2.changeColor("black");
-        sun3.changeColor("black");
+        guy1.changeColor("black");
+        guy2.changeColor("white");
+        guy3.changeColor("black");
+        
         
         
     }
@@ -186,22 +195,24 @@ public class Picture
      */
     public void setColor()
     {
+        fakeBackground.changeColor("white");
+        background1.changeColor("gold");
+        sun1.changeColor("gold");
+        background2.changeColor("magenta");
+        sun2.changeColor("magenta");
+        background3.changeColor("purple");
+        sun3.changeColor("purple");
         
-        background1.changeColor("black");
-        background2.changeColor("black");
-        background3.changeColor("black");
+        door1.changeColor("gold");
+        door2.changeColor("magenta");
+        door3.changeColor("purple");        
         
-        guy1.changeColor("black");
-        guy2.changeColor("black");
-        guy3.changeColor("black");
+        guy1.changeColor("gold");
+        guy2.changeColor("magenta");
+        guy3.changeColor("purple");
         
-        door1.changeColor("black");
-        door2.changeColor("black");
-        door3.changeColor("black");
+
         
-        sun1.changeColor("black");
-        sun2.changeColor("black");
-        sun3.changeColor("black");
         
     }
 }

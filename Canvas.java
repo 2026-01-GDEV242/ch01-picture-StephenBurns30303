@@ -22,13 +22,13 @@ public class Canvas
 
     /**
      * Factory method to get the canvas singleton object.
-     * Small change, the background is now set to black instead of white.
+     * 
      */
     public static Canvas getCanvas()
     {
         if(canvasSingleton == null) {
             canvasSingleton = new Canvas("BlueJ Picture Demo", 500, 300, 
-                                         Color.black);
+                                         Color.white);
         }
         canvasSingleton.setVisible(true);
         return canvasSingleton;
